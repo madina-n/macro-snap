@@ -1,6 +1,6 @@
 # MacroSnap
 
-![MacroSnap Screenshot](docs/images/screenshot.png)
+![MacroSnap Screenshot](image.png)
 
 ## About The Project
 
