@@ -4,78 +4,77 @@
 
 body {
   font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
-  line-height: 1.6; /* Added for better readability */
+  line-height: 1.6;
 }
 
 @layer base {
   :root {
-    --background: 60 100% 94.1%; /* Cream */
-    --foreground: 222.2 84% 4.9%; /* Default Dark */
+    --background: 60 100% 94.1%;
+    --foreground: 222.2 84% 4.9%;
 
-    --card: 60 70% 91%; /* Slightly darker cream for cards */
+    --card: 60 70% 91%;
     --card-foreground: 222.2 84% 4.9%;
 
-    --popover: 60 70% 91%; /* Slightly darker cream for popovers */
+    --popover: 60 70% 91%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 120 60.4% 33.9%; /* Forest Green */
-    --primary-foreground: 60 100% 96%; /* Lighter Cream for contrast */
+    --primary: 120 60.4% 33.9%;
+    --primary-foreground: 60 100% 96%;
 
-    --secondary: 120 20% 92%; /* Light muted green */
-    --secondary-foreground: 120 60.4% 25%; /* Darker Green */
+    --secondary: 120 20% 92%;
+    --secondary-foreground: 120 60.4% 25%;
 
-    --muted: 210 40% 96.1%; /* Default Muted Light Gray */
-    --muted-foreground: 215.4 16.3% 46.9%; /* Default Muted Foreground Gray */
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 11.3 70.4% 62.2%; /* Terracotta */
-    --accent-foreground: 60 100% 96%; /* Lighter Cream for contrast */
+    --accent: 11.3 70.4% 62.2%;
+    --accent-foreground: 60 100% 96%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 60 40% 88%; /* Light gray-cream for borders */
-    --input: 60 40% 88%; /* Light gray-cream for input borders */
-    --ring: 11.3 70.4% 62.2%; /* Terracotta for focus rings */
+    --border: 60 40% 88%;
+    --input: 60 40% 88%;
+    --ring: 11.3 70.4% 62.2%;
 
     --radius: 0.5rem;
 
-    /* Chart colors - can be customized further if needed */
-    --chart-1: 120 60.4% 33.9%; /* Primary - Forest Green */
-    --chart-2: 11.3 70.4% 62.2%; /* Accent - Terracotta */
-    --chart-3: 30 80% 55%; /* Example complementary color */
-    --chart-4: 200 70% 50%; /* Example complementary color */
-    --chart-5: 280 65% 60%; /* Example complementary color */
+    --chart-1: 120 60.4% 33.9%;
+    --chart-2: 11.3 70.4% 62.2%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 200 70% 50%;
+    --chart-5: 280 65% 60%;
     
-    --sidebar-background: 120 15% 97%; /* Very light green for sidebar */
-    --sidebar-foreground: 120 60% 25%; /* Dark green for sidebar text */
-    --sidebar-primary: 120 60.4% 33.9%; /* Forest Green */
-    --sidebar-primary-foreground: 60 100% 96%; /* Lighter Cream */
-    --sidebar-accent: 11.3 70.4% 62.2%; /* Terracotta */
-    --sidebar-accent-foreground: 60 100% 96%; /* Lighter Cream */
-    --sidebar-border: 120 10% 90%; /* Light green border */
-    --sidebar-ring: 11.3 70.4% 62.2%; /* Terracotta */
+    --sidebar-background: 120 15% 97%;
+    --sidebar-foreground: 120 60% 25%;
+    --sidebar-primary: 120 60.4% 33.9%;
+    --sidebar-primary-foreground: 60 100% 96%;
+    --sidebar-accent: 11.3 70.4% 62.2%;
+    --sidebar-accent-foreground: 60 100% 96%;
+    --sidebar-border: 120 10% 90%;
+    --sidebar-ring: 11.3 70.4% 62.2%;
   }
 
   .dark {
     --background: 222.2 84% 4.9%;
-    --foreground: 60 100% 94.1%; /* Cream text on dark */
+    --foreground: 60 100% 94.1%;
 
-    --card: 222.2 84% 6.9%; /* Darker card */
+    --card: 222.2 84% 6.9%;
     --card-foreground: 60 100% 94.1%;
 
     --popover: 222.2 84% 6.9%;
     --popover-foreground: 60 100% 94.1%;
 
-    --primary: 120 60.4% 40%; /* Slightly lighter Forest Green for dark mode */
-    --primary-foreground: 60 100% 96%; 
+    --primary: 120 60.4% 40%;
+    --primary-foreground: 60 100% 96%;
 
-    --secondary: 120 20% 15%; /* Dark muted green */
+    --secondary: 120 20% 15%;
     --secondary-foreground: 60 100% 94.1%;
 
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 210 40% 62.9%;
 
-    --accent: 11.3 70.4% 68%; /* Slightly lighter Terracotta for dark mode */
+    --accent: 11.3 70.4% 68%;
     --accent-foreground: 0 0% 98%;
 
     --destructive: 0 62.8% 30.6%;
@@ -91,9 +90,9 @@ body {
     --chart-4: 200 70% 60%;
     --chart-5: 280 65% 70%;
 
-    --sidebar-background: 222.2 84% 6.9%; /* Dark background for sidebar */
-    --sidebar-foreground: 60 100% 94.1%; /* Cream text */
-    --sidebar-primary: 120 60.4% 40%; 
+    --sidebar-background: 222.2 84% 6.9%;
+    --sidebar-foreground: 60 100% 94.1%;
+    --sidebar-primary: 120 60.4% 40%;
     --sidebar-primary-foreground: 60 100% 96%;
     --sidebar-accent: 11.3 70.4% 68%;
     --sidebar-accent-foreground: 0 0% 98%;
