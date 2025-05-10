@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+  line-height: 1.6; /* Added for better readability */
+}
+
+@layer base {
+  :root {
+    --background: 60 100% 94.1%; /* Cream */
+    --foreground: 222.2 84% 4.9%; /* Default Dark */
+
+    --card: 60 70% 91%; /* Slightly darker cream for cards */
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 60 70% 91%; /* Slightly darker cream for popovers */
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 120 60.4% 33.9%; /* Forest Green */
+    --primary-foreground: 60 100% 96%; /* Lighter Cream for contrast */
+
+    --secondary: 120 20% 92%; /* Light muted green */
+    --secondary-foreground: 120 60.4% 25%; /* Darker Green */
+
+    --muted: 210 40% 96.1%; /* Default Muted Light Gray */
+    --muted-foreground: 215.4 16.3% 46.9%; /* Default Muted Foreground Gray */
+
+    --accent: 11.3 70.4% 62.2%; /* Terracotta */
+    --accent-foreground: 60 100% 96%; /* Lighter Cream for contrast */
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 60 40% 88%; /* Light gray-cream for borders */
+    --input: 60 40% 88%; /* Light gray-cream for input borders */
+    --ring: 11.3 70.4% 62.2%; /* Terracotta for focus rings */
+
+    --radius: 0.5rem;
+
+    /* Chart colors - can be customized further if needed */
+    --chart-1: 120 60.4% 33.9%; /* Primary - Forest Green */
+    --chart-2: 11.3 70.4% 62.2%; /* Accent - Terracotta */
+    --chart-3: 30 80% 55%; /* Example complementary color */
+    --chart-4: 200 70% 50%; /* Example complementary color */
+    --chart-5: 280 65% 60%; /* Example complementary color */
+    
+    --sidebar-background: 120 15% 97%; /* Very light green for sidebar */
+    --sidebar-foreground: 120 60% 25%; /* Dark green for sidebar text */
+    --sidebar-primary: 120 60.4% 33.9%; /* Forest Green */
+    --sidebar-primary-foreground: 60 100% 96%; /* Lighter Cream */
+    --sidebar-accent: 11.3 70.4% 62.2%; /* Terracotta */
+    --sidebar-accent-foreground: 60 100% 96%; /* Lighter Cream */
+    --sidebar-border: 120 10% 90%; /* Light green border */
+    --sidebar-ring: 11.3 70.4% 62.2%; /* Terracotta */
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 60 100% 94.1%; /* Cream text on dark */
+
+    --card: 222.2 84% 6.9%; /* Darker card */
+    --card-foreground: 60 100% 94.1%;
+
+    --popover: 222.2 84% 6.9%;
+    --popover-foreground: 60 100% 94.1%;
+
+    --primary: 120 60.4% 40%; /* Slightly lighter Forest Green for dark mode */
+    --primary-foreground: 60 100% 96%; 
+
+    --secondary: 120 20% 15%; /* Dark muted green */
+    --secondary-foreground: 60 100% 94.1%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 210 40% 62.9%;
+
+    --accent: 11.3 70.4% 68%; /* Slightly lighter Terracotta for dark mode */
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 217.2 32.6% 22.5%;
+    --input: 217.2 32.6% 22.5%;
+    --ring: 11.3 70.4% 68%;
+    
+    --chart-1: 120 60.4% 40%;
+    --chart-2: 11.3 70.4% 68%;
+    --chart-3: 30 80% 65%;
+    --chart-4: 200 70% 60%;
+    --chart-5: 280 65% 70%;
+
+    --sidebar-background: 222.2 84% 6.9%; /* Dark background for sidebar */
+    --sidebar-foreground: 60 100% 94.1%; /* Cream text */
+    --sidebar-primary: 120 60.4% 40%; 
+    --sidebar-primary-foreground: 60 100% 96%;
+    --sidebar-accent: 11.3 70.4% 68%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 217.2 32.6% 22.5%;
+    --sidebar-ring: 11.3 70.4% 68%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
